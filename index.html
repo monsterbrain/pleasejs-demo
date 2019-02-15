@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
+
+    <title>Please JS Demo : The Polite Javascript Color Library</title>
+
+    <style>
+        .card-text{
+            background-color: #535353;
+            text-align: left;
+            padding: 6px 12px 6px 18px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        a.active {
+            background-color: #898989;
+            border-radius: 22px;
+            color: white;
+        }
+
+        span.code {
+            /* background-color: #535353; */
+            /* padding: 6px 12px; */
+            /* border-radius: 8px; */
+            /* color: white; */
+        }
+
+        span.code>.func {
+            color: yellow;
+        }
+
+        span.code>.args {
+            color: rgb(80, 176, 255);
+        }
+
+        span.code>.comment {
+            color: rgb(30, 179, 134);
+        }
+
+        a.scheme-link {
+            border: 1px solid #b6b6b6;
+            border-radius: 8px;
+            padding: 6px 10px;
+            /* background: white; */
+        }
+    </style>
+</head>
+
+
+<body id='main' style="font-family: 'Work Sans', sans-serif; transition: all 1.25s ease-out;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Please JS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="nav" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="tab" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="tab" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Multiple</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="tab" href="#pills-contact" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">Color Scheme</a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="btn btn-light my-2 my-sm-0" href="https://github.com/Fooidge/PleaseJS" data-toggle="tooltip" data-placement="bottom" title="View On Github"><img src="img/GitHub-Mark-32px.png" alt=""></a>
+    </nav>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="card text-center" style="margin-top: 1rem; box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.28);">
+                    <div class="card-img-top" id="img-basic" style="height: 180px; background-color: #32f; transition: all 0.2s ease-out;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Make a random Pleasing color.</h5>
+                        <p class="card-text"><span class="code">Please.<span class="func">make_color</span>();</span></p>
+                        <a href="#" id="basic-btn" class="btn btn-primary">New Color</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="margin-top: 1rem; box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.28);">
+                    <div class="card-img-top row" id="img-basic"
+                        style="height: 180px; margin-left: 0px; transition: all 0.2s ease-out;">
+                        <div class="col-md-3" id="multi-div-1" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="multi-div-2" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="multi-div-3" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="multi-div-4" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Make a Few colors.</h5>
+                        <p class="card-text"><span class="code">Please.<span class="func">make_color</span>({<br>
+                            <span class="args">&nbsp;&nbsp;&nbsp;&nbsp;colors_returned</span>: 4 <span class="comment">
+                                //set number of colors
+                            </span><br>
+                        });</span></p>
+                        <a href="#" id="multi-btn" class="btn btn-primary">New Color</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card text-center" style="margin-top: 1rem; box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.28);">
+                    <div class="card-img-top row" id="img-basic"
+                        style="height: 160px; margin-left: 0px; transition: all 0.2s ease-out;">
+                        <div class="col-md-3" id="scheme-div-1" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="scheme-div-2" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="scheme-div-3" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                        <div class="col-md-3" id="scheme-div-4" style="background-color:#ddd; border: 8px solid rgb(255, 255, 255); border-radius: 36px;"></div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Make a Color Scheme.</h5>
+                        <p class="card-text"><span class="code">Please.<span class="func">make_scheme</span>(<span class="args">&nbsp;base_color</span>, {<br>
+                            <span class="comment">
+                                // where base_color = Please.NAME_to_HSV(colorName);
+                            </span><br>
+                            <span class="args">&nbsp;&nbsp;&nbsp;&nbsp;scheme_type</span>: "ana", <br>
+                            <span class="args">&nbsp;&nbsp;&nbsp;&nbsp;format</span>: "rgb-string" <br>
+
+                        });</span></p>
+                        <a href="#" class="scheme-link">salmon</a>
+                        <a href="#" class="scheme-link">skyblue</a>
+                        <a href="#" class="scheme-link">palegreen</a>
+                        <a href="#" class="scheme-link">plum</a>
+                        <a href="#" class="scheme-link">palevioletred</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="color: white; position: absolute; bottom: 0px; left: 40%;" class="text-center" >
+        Created by <a style="color: turquoise;" href="https://monsterbraininc.com" target="_blank">Monster Brain inc</a>. (<a href="https://github.com/monsterbrain" style="color: turquoise;">github</a>)
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="js/Please-compressed.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#img-basic').css('background-color', Please.make_color());
+        $('#basic-btn').on('click',(event)=>{
+            $('#img-basic').css('background-color', Please.make_color());
+            event.preventDefault();
+        });
+
+        $('#multi-btn').on('click', (event) => {
+            makeMultiColors();
+            event.preventDefault();
+        });
+
+        makeMultiColors();
+
+        function makeMultiColors() {
+            var colors = Please.make_color({
+                // scheme_type: 'analogous',
+                colors_returned: 4 //set number of colors returned
+            });
+
+            for (let i = 0; i < colors.length; i++) {                
+                $('#multi-div-' + (i + 1)).css('background-color', colors[i]);
+            }
+        }
+
+        makeColorScheme('salmon');
+        $('.scheme-link').first().css('background-color', "#ddd");
+
+        function makeColorScheme(colorName) {
+            var t = Please.NAME_to_HSV(colorName);
+            var colors = Please.make_scheme(t, {
+                scheme_type: "ana",
+                format: "rgb-string"
+            });
+            for (var i = 0; i < 4; i++) {
+                $('#scheme-div-' + (i + 1)).css('background-color', colors[i]);
+            }
+        }
+
+        $('.scheme-link').on('click', (event) => {
+            event.preventDefault();
+            $('.scheme-link').css('background-color', "#fff");
+            $(event.currentTarget).css('background-color', "#ddd");
+            makeColorScheme(event.currentTarget.text);
+        });
+        
+    </script>
+</body>
+
+</html>
